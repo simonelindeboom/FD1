@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Aanmelden</title>
+  </head>
+
+<body>
+  <header> 
+    <h1>Aanmelden</h1> 
+  </header>
+
+  <nav id="main-navigation">
+    <ul>
+      <li><a href="opleiding.html">Opleiding</a></li>
+      <li><a href="onderwijsprogramma.html">Onderwijsprogramma</a></li>
+      <li><a href="organisatie.html">Organisatie</a></li>
+      <li><a href="stages.html">Stages en projecten</a></li>        
+      <li><a href="aanmelden.html">Aanmelden</a></li>
+    </ul>
+  </nav>
+
+  <nav id="sub-navigation">
+    <ul>
+      <li><a href="visiebeleid.html">Visie &amp; Beleid</a></li>
+      <li><a href="opbouwstudieprogramma.html">Opbouw Studieprogramma</a></li>
+      <li><a href="competenties.html">Competenties</a></li>
+      <li><a href="diploma.html">Diploma</a></li>
+      <li><a href="beroepen.html">Beroepen</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <article>  
+      <p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers.Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+      <Blockquote>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</blockquote>
+      
+      <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.</p>
+
+      <p>Voor vragen of opmerkingen kunt u <a href="contact.html">contact</a> met ons opnemen.</p>
+    </article>
+
+    <article>
+      <form action="aanmelden.html" method="post">
+        <fieldset>
+          <legend>Contactgegevens</legend>
+          <label for="voornaam">Voornaam</label>
+          <input type="text" id="voornaam">
+
+          <label for="achternaam">Achternaam</label>
+          <input type="text" id="achternaam">
+
+          <label for="bedrijf">Bedrijf</label>
+          <input type="text" id="bedrijf">
+
+          <label for="adres">Adres</label>
+          <input type="text" id="adres">
+
+          <label for="postcode">Postcode</label>
+          <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required placeholder="...." id="postcode">
+
+          <label for="plaats">Plaats</label>
+          <input type="text" id="plaats">
+
+          <label for="telefoonnummer">Telefoonnummer</label>
+          <input type="tel" id="telefoonnummer">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </fieldset>
+
+        <fieldset>
+          <legend> Ik wil mij aanmelden:</legend>
+            <input type="radio" name="typeaanmelding" value="project" required>voor een project
+            <input type="radio" name="typeaanmelding" value="stagebedrijf">als stage bedrijf
+        </fieldset>
+          
+        <fieldset>
+          <legend>Project</legend>      
+            <label for="titel">Titel</label>
+            <input type="text" id="titel" />     
+
+            <label for="opdracht">Opdrachtomschrijving</label>
+            <textarea id="opdracht"></textarea>
+            
+            <label for="doelgroep">Doelgroepomschrijving</label>
+            <textarea id="doelgroep"></textarea> 
+            
+            <label for="doelstelling">Doelstelling/intentie van het project</label>
+            <textarea id="doelstelling"></textarea> 
+            
+            <label for="looptijd">Looptijd</label>
+            <input type="text" id="looptijd" />
+            
+            <label for="deadline">Deadline</label>
+            <input type="date" id="deadline" />
+
+            <label for="projectgeschikt">Geschikt voor</label>
+            <select id="projectgeschikt">
+                <option value="propedeuse">eerstejaarsstudenten</option>
+                <option value="v1">tweedejaarsstudenten</option>
+                <option value="v2">derdejaarsstudenten</option>
+                <option value="afstudeer">afstudeerstudenten</option>
+                <option value="onbekend">onbekend</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Stagebedrijf</legend>
+            
+            <label for="bedrijfsnaam">Bedrijfsnaam</label>
+            <input type="text" id="bedrijfsnaam" />
+                                
+            <label for="bedrijfsadres">Adres</label>
+            <input type="text" id="bedrijfsadres" />
+            
+            <label for="bedrijfspostcode">Postcode</label>
+            <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="bedrijfspostcode" />
+            
+            <label for="bedrijfsplaats">Plaats</label>
+            <input type="text" id="bedrijfsplaats" />
+            
+            <label for="sector">Sector</label>
+            <input type="text" id="sector" />
+            
+            <label for="corebusiness">Corebusiness</label>
+            <input type="text" id="corebusiness" />
+            
+            <label for="stagegeschikt">Geschikt voor</label>
+            <select id="stagegeschikt">
+                <option value="v1">tweedejaarsstudenten</option>
+                <option value="afstudeer">afstudeerstudenten</option>
+                <option value="onbekend">onbekend</option>
+            </select>
+            
+            <label for="duur">Hoe lang is de stage?</label>
+            <select id="duur">
+                <option value="10">10 weken</option>
+                <option value="20">20 weken</option>
+            </select>
+            
+            <label for="begindatum">Begindatum</label>
+            <input type="date" id="begindatum" />
+            
+            <label for="werkzaamheden">Werkzaamheden</label>
+            <textarea id="werkzaamheden"></textarea> 
+        </fieldset>
+
+        <fieldset>
+          <legend>Opmerkingen</legend>
+            <label for="opmerkingen">Opmerking</label>
+            <textarea id="opmerkingen"></textarea>
+        </fieldset>
+      </form>
+    </article>
+  </section>
+    
+  <footer> Simone Lindeboom, Frontend DT1, februari 2014</footer>
+</body>
+</html>
