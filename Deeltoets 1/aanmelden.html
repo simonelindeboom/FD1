@@ -46,59 +46,59 @@
       <form action="aanmelden.html" method="post">
         <fieldset>
           <legend>Contactgegevens</legend>
-          <label for="voornaam">Voornaam</label>
-          <input type="text" id="voornaam">
+          <label for="surname">Voornaam</label>
+          <input type="text" id="surname">
 
-          <label for="achternaam">Achternaam</label>
-          <input type="text" id="achternaam">
+          <label for="name">Achternaam</label>
+          <input type="text" id="name">
 
-          <label for="bedrijf">Bedrijf</label>
-          <input type="text" id="bedrijf">
+          <label for="company">Bedrijf</label>
+          <input type="text" id="company">
 
-          <label for="adres">Adres</label>
-          <input type="text" id="adres">
+          <label for="adress">Adres</label>
+          <input type="text" id="adress">
 
-          <label for="postcode">Postcode</label>
-          <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required placeholder="...." id="postcode">
+          <label for="zipCode">Postcode</label>
+          <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required placeholder="...." id="zipCode">
 
-          <label for="plaats">Plaats</label>
-          <input type="text" id="plaats">
+          <label for="city">Plaats</label>
+          <input type="text" id="city">
 
-          <label for="telefoonnummer">Telefoonnummer</label>
-          <input type="tel" id="telefoonnummer">
+          <label for="phoneNumber">Telefoonnummer</label>
+          <input type="tel" id="phoneNumber">
 
-          <label for="email">Email</label>
-          <input type="email" id="email">
+          <label for="emailAdress">Email</label>
+          <input type="email" id="emailAdress">
         </fieldset>
 
         <fieldset>
           <legend> Ik wil mij aanmelden:</legend>
-            <input type="radio" name="typeaanmelding" value="project" required>voor een project
-            <input type="radio" name="typeaanmelding" value="stagebedrijf">als stage bedrijf
+            <input type="radio" name="typeEntry" value="project" required>voor een project
+            <input type="radio" name="typeEntry" value="stagebedrijf">als stage bedrijf
         </fieldset>
           
         <fieldset>
           <legend>Project</legend>      
-            <label for="titel">Titel</label>
-            <input type="text" id="titel" />     
+            <label for="title">Titel</label>
+            <input type="text" id="title" />     
 
-            <label for="opdracht">Opdrachtomschrijving</label>
-            <textarea id="opdracht"></textarea>
+            <label for="assignment">Opdrachtomschrijving</label>
+            <textarea id="assignment"></textarea>
             
-            <label for="doelgroep">Doelgroepomschrijving</label>
-            <textarea id="doelgroep"></textarea> 
+            <label for="targetAudience">Doelgroepomschrijving</label>
+            <textarea id="targetAudience"></textarea> 
             
-            <label for="doelstelling">Doelstelling/intentie van het project</label>
-            <textarea id="doelstelling"></textarea> 
+            <label for="goal">Doelstelling/intentie van het project</label>
+            <textarea id="goal"></textarea> 
             
-            <label for="looptijd">Looptijd</label>
-            <input type="text" id="looptijd" />
+            <label for="maturity">Looptijd</label>
+            <input type="text" id="maturity" />
             
             <label for="deadline">Deadline</label>
             <input type="date" id="deadline" />
 
-            <label for="projectgeschikt">Geschikt voor</label>
-            <select id="projectgeschikt">
+            <label for="projectSuitableFor">Geschikt voor</label>
+            <select id="projectSuitableFor">
                 <option value="propedeuse">eerstejaarsstudenten</option>
                 <option value="v1">tweedejaarsstudenten</option>
                 <option value="v2">derdejaarsstudenten</option>
@@ -110,48 +110,48 @@
         <fieldset>
           <legend>Stagebedrijf</legend>
             
-            <label for="bedrijfsnaam">Bedrijfsnaam</label>
-            <input type="text" id="bedrijfsnaam" />
+            <label for="companyName">Bedrijfsnaam</label>
+            <input type="text" id="companyName" />
                                 
-            <label for="bedrijfsadres">Adres</label>
-            <input type="text" id="bedrijfsadres" />
+            <label for="companyAdress">Adres</label>
+            <input type="text" id="companyAdress" />
             
-            <label for="bedrijfspostcode">Postcode</label>
-            <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="bedrijfspostcode" />
+            <label for="companyZipCode">Postcode</label>
+            <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="companyZipCode" />
             
-            <label for="bedrijfsplaats">Plaats</label>
-            <input type="text" id="bedrijfsplaats" />
+            <label for="companyCity">Plaats</label>
+            <input type="text" id="companyCity" />
             
             <label for="sector">Sector</label>
             <input type="text" id="sector" />
             
-            <label for="corebusiness">Corebusiness</label>
-            <input type="text" id="corebusiness" />
+            <label for="coreBusiness">Corebusiness</label>
+            <input type="text" id="coreBusiness" />
             
-            <label for="stagegeschikt">Geschikt voor</label>
-            <select id="stagegeschikt">
+            <label for="internshipSuitableFor">Geschikt voor</label>
+            <select id="internshipSuitableFor">
                 <option value="v1">tweedejaarsstudenten</option>
                 <option value="afstudeer">afstudeerstudenten</option>
                 <option value="onbekend">onbekend</option>
             </select>
             
-            <label for="duur">Hoe lang is de stage?</label>
-            <select id="duur">
+            <label for="duration">Hoe lang is de stage?</label>
+            <select id="duration">
                 <option value="10">10 weken</option>
                 <option value="20">20 weken</option>
             </select>
             
-            <label for="begindatum">Begindatum</label>
-            <input type="date" id="begindatum" />
+            <label for="startDate">Begindatum</label>
+            <input type="date" id="startDate" />
             
-            <label for="werkzaamheden">Werkzaamheden</label>
-            <textarea id="werkzaamheden"></textarea> 
+            <label for="tasks">Werkzaamheden</label>
+            <textarea id="tasks"></textarea> 
         </fieldset>
 
         <fieldset>
           <legend>Opmerkingen</legend>
-            <label for="opmerkingen">Opmerking</label>
-            <textarea id="opmerkingen"></textarea>
+            <label for="comments">Opmerking</label>
+            <textarea id="comments"></textarea>
         </fieldset>
       </form>
     </article>
